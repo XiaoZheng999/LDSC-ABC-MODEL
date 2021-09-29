@@ -110,6 +110,10 @@ CD34+Progenitor	covid_ldscores/CD34+Progenitor.GeneSet.,covid_ldscores/control.
 MatureBcell	covid_ldscores/MatureBcell.GeneSet.,covid_ldscores/control.
 NaiveCD8+Tcell	covid_ldscores/NaiveCD8+Tcell.GeneSet.,covid_ldscores/control.
 
+#计算NaiveCD8+Tcell 报错LinAlgError: Singular matrix ？？？
+
+
+
 
 
 
