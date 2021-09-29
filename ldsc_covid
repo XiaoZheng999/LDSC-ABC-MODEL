@@ -28,12 +28,32 @@
 ```
 vim xiaozheng.pbs
       #PBS -N xiaozheng
-      #PBS -o /share2/pub/zhenggw/zhenggw/Covid/standard.out 
-      #PBS -e /share2/pub/zhenggw/zhenggw/Covid/standard.err
+      #PBS -o /share2/pub/zhenggw/zhenggw/RDS_COVID/standard.out 
+      #PBS -e /share2/pub/zhenggw/zhenggw/RDS_COVID/standard.err
       #PBS -q workq
       #PBS -l nodes=node03:ppn=5
-      /share2/pub/zhenggw/zhenggw/anaconda3/envs/R410/bin/Rscript /share2/pub/zhenggw/zhenggw/Covid/marker.R
+      /share2/pub/zhenggw/zhenggw/anaconda3/envs/R410/bin/Rscript /share2/pub/zhenggw/zhenggw/RDS_COVID/moderate.R
 ```
+
+#按疾病状态分组    unique(covid@meta.data$statas)
+#[1] "moderate" "mild"     "normal"   "severe"
+
+moderate.R
+      library(Seurat)
+      setwd("/share2/pub/zhenggw/zhenggw/RDS_COVID")
+      getwd()
+      covid <- readRDS("Rpoly1.rds")
+      Idents(covid) = "statas"
+      tmp = WhichCells(covid,idents = "moderate")
+      moderate_co = subset(covid,cells=tmp)
+      saveRDS(moderate_co,file = "moderate_co.rds")
+      
+# mild_co.rds
+# moderate_co.rds
+# normal_co.rds
+# severe_co.rds
+
+
 ```
 vim marker.R
       library(Seurat)
