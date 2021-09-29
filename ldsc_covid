@@ -2,6 +2,7 @@
 #要按照细胞类型找出差异基因
 #PBS process
 ```
+vim xiaozheng.pbs
 
 vim xiaozheng.pbs
 
