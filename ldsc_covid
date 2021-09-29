@@ -65,6 +65,21 @@ vim marker.R
 ```
 #生成13celltype.[1-22].M + 13celltype.[1-22].M_5_50 + 13celltype.[1-22].ldscore + control.[1-22].M + control.[1-22].M_5_50 + control.[1-22].ldscore
 
+#整理.ldcts文件，内容为：
+EffectorCD8+Tcell	covid_ldscores/EffectorCD8+Tcell.GeneSet.,covid_ldscores/control.
+MemoryCD8+Tcell	covid_ldscores/MemoryCD8+Tcell.GeneSet.,covid_ldscores/control.
+NaiveCD8+Tcell	covid_ldscores/NaiveCD8+Tcell.GeneSet.,covid_ldscores/control.
+NaiveCD4+Tcell	covid_ldscores/NaiveCD4+Tcell.GeneSet.,covid_ldscores/control.
+MemoryCD4+Tcell	covid_ldscores/MemoryCD4+Tcell.GeneSet.,covid_ldscores/control.
+CD14+monocyte	covid_ldscores/CD14+monocyte.GeneSet.,covid_ldscores/control.
+NK	covid_ldscores/NK.GeneSet.,covid_ldscores/control.
+NaiveBcell	covid_ldscores/NaiveBcell.GeneSet.,covid_ldscores/control.
+CD16+monocyte	covid_ldscores/CD16+monocyte.GeneSet.,covid_ldscores/control.
+DC	covid_ldscores/DC.GeneSet.,covid_ldscores/control.
+Platelet	covid_ldscores/Platelet.GeneSet.,covid_ldscores/control.
+CD34+Progenitor	covid_ldscores/CD34+Progenitor.GeneSet.,covid_ldscores/control.
+MatureBcell	covid_ldscores/MatureBcell.GeneSet.,covid_ldscores/control.
+
 
 
 
