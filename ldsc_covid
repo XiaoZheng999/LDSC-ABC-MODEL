@@ -1,6 +1,8 @@
 #原始数据Rploy1.rds Seurat处理好的
 #要按照细胞类型找出差异基因
 #PBS process
+```
+
 vim xiaozheng.pbs
 
       #PBS -N xiaozheng
@@ -9,3 +11,4 @@ vim xiaozheng.pbs
       #PBS -q workq
       #PBS -l nodes=node03:ppn=5
       /share2/pub/zhenggw/zhenggw/anaconda3/envs/R410/bin/Rscript /share2/pub/zhenggw/zhenggw/Covid/marker.R
+```
