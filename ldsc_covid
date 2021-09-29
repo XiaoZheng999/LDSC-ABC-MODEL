@@ -1,7 +1,7 @@
 #原始数据Rploy1.rds Seurat处理好的
 #要按照细胞类型找出差异基因
 #PBS process
-      vim xiaozheng.pbs
+	vim xiaozheng.pbs
 
       #PBS -N xiaozheng
       #PBS -o /share2/pub/zhenggw/zhenggw/Covid/standard.out 
