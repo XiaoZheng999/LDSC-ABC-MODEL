@@ -110,35 +110,14 @@ CD34+Progenitor	covid_ldscores/CD34+Progenitor.GeneSet.,covid_ldscores/control.
 MatureBcell	covid_ldscores/MatureBcell.GeneSet.,covid_ldscores/control.
 NaiveCD8+Tcell	covid_ldscores/NaiveCD8+Tcell.GeneSet.,covid_ldscores/control.
 
-#计算NaiveCD8+Tcell 报错LinAlgError: Singular matrix ？？？
+#计算NaiveCD8+Tcell 报错LinAlgError: Singular matrix
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```
+      python ./ldsc/ldsc.py \
+          --h2-cts  COVID_try.sumstats.gz \
+          --ref-ld-chr 1000G_EUR_Phase3_baseline/baseline. \
+          --out COVID_Result \
+          --ref-ld-chr-cts covid.ldcts \
+          --w-ld-chr weights_hm3_no_hla/weights.
+```
