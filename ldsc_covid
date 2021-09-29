@@ -1,3 +1,27 @@
+#原始GWAS文件COVID19_HGI_B2_ALL_leave_23andme_b37_new.txt
+#CHR     POS     REF     ALT     SNP     all_meta_N      all_inv_var_meta_beta   all_inv_var_meta_sebeta all_inv_var_meta_p      all_inv_var_het_p       all_meta_sample_Nall_meta_AF     rsid
+#要取其中的某些列转换为 snpid hg18chr bp a1 a2 or se pval info ngt CEUof 具体转换文件参考列名解释，记录本0013154
+```
+      cut -f XXX file > newfile
+      sed -i '1 s/SNP/snpid/' filename
+```
+#其中or为log（OR）要转换回原始值,记录本0013155
+```
+      awk -v OFS ="\t" '{if(NR)!=1 $6=2^$6;print $0}' file >newfile
+```
+
+#
+```
+      python ./ldsc/munge_sumstats.py \
+      --sumstats COVID_new.txt \
+      --N 2427220 \
+      --out COVID \
+      --chunksize 500000 \
+      --merge-alleles ./w_hm3.snplist
+```
+
+
+
 #原始数据Rploy1.rds Seurat处理好的
 #要按照细胞类型找出差异基因
 #PBS process      qstat pestat
