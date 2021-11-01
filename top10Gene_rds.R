@@ -1,3 +1,6 @@
+#get the gene from the .rds dataset for ldsc
+#calculate specifity and get the top 10% geneset
+
 library(tidyverse)
 library("rhdf5")
 library("snow")
