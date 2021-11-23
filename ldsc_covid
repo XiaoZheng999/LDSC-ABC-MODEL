@@ -7,7 +7,7 @@
 ```
 #其中or为log（OR）要转换回原始值,记录本0013155
 ```
-      awk -v OFS ="\t" '{if(NR)!=1 $6=2^$6;print $0}' file >newfile
+      awk -v OFS="\t" '{if(NR!=1) $7=0.1;print $0}' tmp.txt > DepressiveSymptoms.txt
 ```
 
 #
